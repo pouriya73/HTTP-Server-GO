@@ -1,5 +1,6 @@
 package main
 
+//Writing a basic HTTP server is easy using the net/http package.
 
 import (
     "fmt"
