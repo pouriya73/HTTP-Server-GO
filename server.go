@@ -17,6 +17,15 @@ func hello(w http.ResponseWriter, req *http.Request) {
     fmt.Fprintf(w, "hello\n")
 }
 
+
+//Functions serving as handlers take a http.ResponseWriter and a http.Request as arguments.
+//The response writer is used to fill in the HTTP response.
+//Here our simple response is just “hello\n”.
+//This handler does something a little more sophisticated by 
+//reading all the HTTP request headers and echoing them into the response body.
+
+
+
 func headers(w http.ResponseWriter, req *http.Request) {
 
     for name, headers := range req.Header {
