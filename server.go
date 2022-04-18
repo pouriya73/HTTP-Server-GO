@@ -35,6 +35,10 @@ func headers(w http.ResponseWriter, req *http.Request) {
     }
 }
 
+//We register our handlers on server routes using the http.HandleFunc convenience function.
+//It sets up the default router in the net/http package and takes a function as an argument.
+
+
 
 func main() {
 
